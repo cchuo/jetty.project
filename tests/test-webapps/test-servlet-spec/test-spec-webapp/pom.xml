@@ -78,7 +78,7 @@
               com.acme;version="${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}",
               *
             </Import-Package>
-            <_nouses />
+            <_nouses/>
             <Export-Package>com.acme.test;version="${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}";-noimport:=true</Export-Package>
             <Web-ContextPath>/</Web-ContextPath>
             <Bundle-ClassPath>.,WEB-INF/classes,WEB-INF/lib</Bundle-ClassPath>
@@ -96,10 +96,10 @@
             <configuration>
               <tasks>
                 <concat destfile="${project.build.directory}/plugin-context.xml">
-                  <filelist dir="src/main/templates/" files="plugin-context-header.xml,env-definitions.xml" />
+                  <filelist dir="src/main/templates/" files="plugin-context-header.xml,env-definitions.xml"/>
                 </concat>
                 <concat destfile="${project.build.directory}/test-spec.xml">
-                  <filelist dir="src/main/templates/" files="annotations-context-header.xml,env-definitions.xml" />
+                  <filelist dir="src/main/templates/" files="annotations-context-header.xml,env-definitions.xml"/>
                 </concat>
               </tasks>
             </configuration>
@@ -225,7 +225,7 @@
        <groupId>org.eclipse.jetty</groupId>
        <artifactId>jetty-util</artifactId>
        <!-- deliberately old version to test classloading -->
-       <version>9.3.0.RC0</version>
+       <version>9.3.24.v20180605</version>
      </dependency>
   </dependencies>
 </project>
